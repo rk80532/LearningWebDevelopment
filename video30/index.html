@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+    <style>
+        :root{
+            --color:rgb(255, 42, 0);
+            --seccolor:rgb(159, 127, 212);
+           --defpad:23px;
+           --defop:0.2;
+        }
+         *{
+            margin: 0;
+            padding: 0;
+         }
+         .nav{
+            background-color: var(--color);
+         }
+         ul{
+            display: flex;
+            padding: var(--defpad);
+            margin: auto;
+         }
+         ul li{
+            opacity: var(--defop);
+            list-style: none;
+            padding: 34;
+            border: 2px solid var(--seccolor);
+         }
+         ul li:first-child{
+            background-color: orange;
+            list-style: none;
+         }
+        
+         .container{
+            background-color: rgb(172,243,201);
+         }
+    </style>
+</head>
+<body>
+    <!-- card.png is an image that contains a card image. write html and css code to design this card -->
+   <div class="nav">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+   </div>
+   <div class="container">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam magnam quidem commodi voluptate quod minus maiores reprehenderit eum quisquam labore numquam mollitia placeat adipisci ipsa exercitationem tenetur quia modi iusto soluta aliquam cupiditate, dignissimos ratione molestias accusantium? Ratione sequi id assumenda provident molestias, explicabo cumque!
+   </div>
+</body>
+</html>

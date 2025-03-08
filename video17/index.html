@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        div{
+            /* element selector */
+            background-color: red;
+        }
+        .red{
+            background-color: blue;
+        }
+        #green{
+            background-color: green;
+        }
+        /* child selector */
+        div> p{
+            background-color: blue;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">
+        I am a div
+        <p>I am para inside div</p>
+    </div>
+    <div id="green">
+        I am second div
+    </div>
+
+</body>
+</html>
