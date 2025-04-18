@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS more on CSS</title>
+    <Style>
+          /* .box:first-child{
+           background-color: red; 
+          } */
+          /* .box::first-line{
+            color: yellow;
+          }
+          .boxes *{
+            color: blue;
+            border: 2px solid black;
+          }
+          p,a,.box,[data-color="primary"]{
+               padding-top: 45px;
+        } */
+         /* .box:nth-child(even){
+            background-color: blue;
+         }
+         .box:nth-last-child(2){
+            background-color: brown;
+         } */
+          .boxes::before{
+            content: "before";
+            color: rgb(221, 120, 31);
+        }
+        .boxes::after{
+            content: "before";
+            color: rgb(127, 155, 255);
+        }
+            ::selection{
+                background-color: black;
+            color: aqua;
+        }
+        .box::first-letter{
+            color: rgb(83, 99, 91);
+        }
+    </Style>
+</head>
+<body>
+    <Div class="boxes">
+        <div class="box">hey I am a box </div>
+        <div class="box">hey I am a box</div>
+        <div class="box">hey I am a box</div>
+        <input type="text" placeholder="type your name here">
+    </Div>
+</body>
+</html>
